@@ -1,3 +1,22 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+
+::selection {
+    background-color: #83274e;
+    color: #ffffff;
+}
+
+
+a,
+button,
+input,
+summary {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -67,13 +86,13 @@ body {
     gap: 12px;
 }
 
-/* --- CORREÇÃO DEFINITIVA DO BOTÃO FALE CONOSCO --- */
+
 a.btn-fale-conosco,
 a.btn-fale-conosco:visited,
 a.btn-fale-conosco:active,
 a.btn-fale-conosco:focus {
     background-color: #25D366 !important;
-    /* Verde WhatsApp */
+
     color: #ffffff !important;
     padding: 10px 20px !important;
     border-radius: 25px !important;
@@ -97,21 +116,21 @@ a.btn-fale-conosco:hover {
     color: #ffffff !important;
 }
 
-/* Ajuste na navegação para alinhar os elementos ao centro */
+
 .nav-actions {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-/* --- ÍCONE DE PERFIL MODERNO --- */
+
 .btn-perfil {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: #ffffff !important;
     color: #83274e !important;
-    /* Rosa/Vinho do Ateliê */
+
     border: 1.5 solid #f0d2dd !important;
     display: inline-flex !important;
     align-items: center !important;
@@ -124,7 +143,7 @@ a.btn-fale-conosco:hover {
 .btn-perfil:hover {
     background-color: #83274e !important;
     color: #ffffff !important;
-    /* Inverte a cor no hover */
+
     transform: translateY(-2px) !important;
     box-shadow: 0 4px 12px rgba(131, 39, 78, 0.2) !important;
 }
@@ -254,11 +273,12 @@ a.btn-fale-conosco:hover {
     border-radius: 10px;
 }
 
-/* --- SLIDER / CARROSSEL DA HERO SECTION --- */
+
 .slider-wrapper {
     position: relative;
     width: 100%;
-    height: 280px; /* Altura ideal para o card da Hero */
+    height: 280px;
+
     border-radius: 15px;
     overflow: hidden;
     margin-bottom: 15px;
@@ -284,18 +304,27 @@ a.btn-fale-conosco:hover {
 }
 
 @keyframes autoSlide {
-    0%, 20% {
+
+    0%,
+    20% {
         transform: translateX(0%);
     }
-    25%, 45% {
+
+    25%,
+    45% {
         transform: translateX(-25%);
     }
-    50%, 70% {
+
+    50%,
+    70% {
         transform: translateX(-50%);
     }
-    75%, 95% {
+
+    75%,
+    95% {
         transform: translateX(-75%);
     }
+
     100% {
         transform: translateX(0%);
     }
@@ -766,7 +795,7 @@ a.btn-fale-conosco:hover {
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
-/* --- SEÇÃO DE AVALIAÇÕES / DEPOIMENTOS --- */
+
 .testimonials-section {
     padding: 70px 20px;
     background-color: #fdf5f7;
@@ -775,7 +804,8 @@ a.btn-fale-conosco:hover {
 
 .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Organiza em grade fluida */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
     gap: 25px;
     max-width: 1200px;
     margin: 30px auto 0 auto;
@@ -820,53 +850,53 @@ a.btn-fale-conosco:hover {
     font-weight: 700;
 }
 
-/* --- HIERARQUIA DE TONS DE ROSA POR SEÇÃO --- */
 
-/* 1. Hero Section */
 .hero-container {
     background-color: #fdf5f7;
 }
 
-/* 2. Quem Somos */
+
 .about-section {
     background-color: #f8e8ee;
     border-top: 1px solid #f0d2dd;
     border-bottom: 1px solid #f0d2dd;
 }
 
-/* 3. Destaques / Serviços (Flip 3D) */
+
 .services-section {
     background-color: #f9e2eb;
 }
 
-/* 4. Galeria de Fotos */
+
 .gallery-section {
     background-color: #fdf5f7;
     border-top: 1px solid #f0d2dd;
 }
 
-/* 5. Depoimentos das Mamães */
+
 .testimonials-section {
     background-color: #f5d0de;
     border-top: 1px solid #ebd2dc;
 }
 
 
-/* --- SEÇÃO DO CARROSSEL EM DESTAQUE --- */
+
 .slider-section {
     padding: 70px 20px;
-    background-color: #f7e2ea; /* Tom de rosa médio para integrar com o ateliê */
+    background-color: #f7e2ea;
+
     border-top: 1px solid #ebd0db;
     border-bottom: 1px solid #ebd0db;
     text-align: center;
 }
 
-/* Moldura em formato paisagem fixo e responsivo */
+
 .slider-wrapper {
     position: relative;
     width: 90%;
     max-width: 800px;
-    height: 450px; /* Altura fixa conforme o código original */
+    height: 450px;
+
     margin: 30px auto 0 auto;
     overflow: hidden;
     border-radius: 20px;
@@ -874,7 +904,7 @@ a.btn-fale-conosco:hover {
     border: 3px solid #ffffff;
 }
 
-/* Ajuste para telas menores (celular) para não quebrar a proporção */
+
 @media (max-width: 768px) {
     .slider-wrapper {
         height: 250px;
@@ -882,7 +912,7 @@ a.btn-fale-conosco:hover {
     }
 }
 
-/* Trilha dos slides (4 slides = 400% de largura) */
+
 .slider-track {
     display: flex;
     width: 400%;
@@ -890,12 +920,12 @@ a.btn-fale-conosco:hover {
     animation: autoSlide 12s cubic-bezier(0.77, 0, 0.175, 1) infinite;
 }
 
-/* Pausa a animação ao passar o cursor */
+
 .slider-wrapper:hover .slider-track {
     animation-play-state: paused;
 }
 
-/* Ajuste forçado de cada imagem */
+
 .slide-img {
     width: 25%;
     height: 100%;
@@ -904,21 +934,261 @@ a.btn-fale-conosco:hover {
     display: block;
 }
 
-/* Animação horizontal para 4 slides */
+
 @keyframes autoSlide {
-    0%, 20% {
+
+    0%,
+    20% {
         transform: translateX(0%);
     }
-    25%, 45% {
+
+    25%,
+    45% {
         transform: translateX(-25%);
     }
-    50%, 70% {
+
+    50%,
+    70% {
         transform: translateX(-50%);
     }
-    75%, 95% {
+
+    75%,
+    95% {
         transform: translateX(-75%);
     }
+
     100% {
         transform: translateX(0%);
+    }
+}
+
+
+.faq-section {
+    padding: 70px 20px;
+    background-color: #f8e8ee;
+    border-top: 1px solid #f0d2dd;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #f0d2dd;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(131, 39, 78, 0.04);
+    transition: all 0.3s ease;
+}
+
+.faq-item[open] {
+    border-color: #83274e;
+    box-shadow: 0 6px 18px rgba(131, 39, 78, 0.08);
+}
+
+.faq-question {
+    padding: 18px 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    font-size: 0.95rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+.faq-icon {
+    font-size: 1.2rem;
+    color: #83274e;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    padding: 0 22px 18px 22px;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    border-top: 1px solid #fdf5f7;
+}
+
+
+.footer-site {
+    background-color: #1a1a1a;
+    color: #e5e5e5;
+    padding: 60px 20px 20px 20px;
+    font-size: 0.88rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #83274e;
+}
+
+.footer-col p {
+    line-height: 1.6;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: #bbb !important;
+    text-decoration: none !important;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #f7e2ea !important;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-links a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 8px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background: #83274e;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    color: #888;
+    font-size: 0.8rem;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.testimonial-card,
+.card-container,
+.gallery-item,
+.stat-card,
+.faq-item {
+    animation: fadeInUp linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+}
+
+.status-disponibilidade {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+    color: #27ae60;
+    font-weight: 600;
+    background-color: #eafaf1;
+    padding: 4px 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.indicator-green {
+    width: 8px;
+    height: 8px;
+    background-color: #27ae60;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
+}
+
+/* --- AJUSTES DE RESPONSIVIDADE MOBILE --- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        display: none; /* Esconde menu extenso em telas muito pequenas */
+    }
+
+    .hero-container {
+        padding: 40px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .features-grid {
+        flex-direction: column;
+    }
+
+    .about-container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .about-stats {
+        flex-direction: column;
     }
 }
