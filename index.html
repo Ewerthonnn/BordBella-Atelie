@@ -11,7 +11,7 @@
 
 <body>
 
-    <!-- BARRA DE NAVEGAÇÃO FIXA -->
+
     <header class="navbar">
         <div class="logo-container">
             <img src="logo.png" alt="Logo BordBella" class="logo">
@@ -22,15 +22,16 @@
             <a href="#inicio">Início</a>
             <a href="#sobre">Sobre</a>
             <a href="#servicos">Serviços</a>
-            <a href="#colecoes">Coleções</a>
             <a href="#galeria">Galeria</a>
-            <a href="#depoimentos">Depoimentos</a>
+            <a href="#contato">Contato</a>
         </nav>
 
         <div class="nav-actions">
-            <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20o%20ateli%C3%AA." target="_blank" rel="noopener noreferrer" class="btn-fale-conosco">💬 Fale Conosco</a>
+            <a href="https://wa.me/5512992040625?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20o%20ateli%C3%AA."
+                target="_blank" rel="noopener noreferrer" class="btn-fale-conosco">💬 Fale Conosco</a>
             <a href="#perfil" class="btn-perfil" title="Minha Conta">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
                     <circle cx="12" cy="7" r="4"></circle>
                 </svg>
@@ -38,7 +39,7 @@
         </div>
     </header>
 
-    <!-- 1. HERO SECTION -->
+
     <main class="hero-container" id="inicio">
         <div class="hero-text">
             <div class="badge-tag">
@@ -48,12 +49,14 @@
             <h1>Peças Únicas e <span>Bordadas com Amor</span> para o Seu Bebê</h1>
 
             <p class="description">
-                Enxovais personalizados, toalhinhas e bolsas maternidade feitas com delicadeza, acabamento impecável e entrega rápida.
+                Enxovais personalizados, toalhinhas e bolsas maternidade feitas com delicadeza, acabamento impecável e
+                entrega rápida.
             </p>
 
             <div class="hero-buttons">
-                <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Quero%20fazer%20uma%20encomenda%20personalizada." target="_blank" rel="noopener noreferrer" class="btn-primary">💬 Encomendar no WhatsApp</a>
-                <a href="#colecoes" class="btn-secondary">📖 Ver Catálogo</a>
+                <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Quero%20fazer%20uma%20encomenda%20personalizada."
+                    target="_blank" class="btn-primary">💬 Encomendar no WhatsApp</a>
+                <a href="#catalogo" class="btn-secondary">📖 Ver Catálogo</a>
             </div>
 
             <div class="features-grid">
@@ -90,9 +93,15 @@
                     <span class="tag-highlight">Peça em Destaque</span>
                 </div>
 
-                <div class="image-wrapper">
-                    <img src="produto.jpg" alt="Enxoval em Destaque" class="product-img">
-                    <span class="floating-badge">💖 Feito à Mão com Amor</span>
+                <!-- CARROSSEL DENTRO DO CARD DE DESTAQUE NA HERO SECTION -->
+                <div class="slider-wrapper">
+                    <div class="slider-track">
+                        <img class="slide-img" src="Destaque.png" alt="Enxoval em Destaque 1">
+                        <img class="slide-img" src="Destaque2.png" alt="Enxoval em Destaque 2">
+                        <img class="slide-img" src="Destaque3.png" alt="Enxoval em Destaque 3">
+                        <img class="slide-img" src="Destaque4.png" alt="Enxoval em Destaque 4">
+                    </div>
+                
                 </div>
 
                 <div class="card-footer">
@@ -106,7 +115,7 @@
         </div>
     </main>
 
-    <!-- 2. QUEM SOMOS -->
+
     <section class="about-section" id="sobre">
         <div class="about-container">
             <div class="about-text">
@@ -117,11 +126,14 @@
                 <h2>Em cada pontinho, <span>um novo amor é costurado com ternura</span></h2>
 
                 <p>
-                    Fundado com a missão de transformar o acolhimento da maternidade em lembranças inesquecíveis, o <strong>BordBella Ateliê</strong> cria enxovais e acessórios infantis de alto padrão. Cada peça nasce da dedicação paciente à arte do bordado computadorizado e artesanal.
+                    Fundado com a missão de transformar o acolhimento da maternidade em lembranças inesquecíveis, o
+                    <strong>BordBella Ateliê</strong> cria enxovais e acessórios infantis de alto padrão. Cada peça
+                    nasce da dedicação paciente à arte do bordado computadorizado e artesanal.
                 </p>
 
                 <p>
-                    Priorizamos tecidos 100% algodão, percal de alta densidade e fios hipoalergênicos que não irritam a pele sensível do recém-nascido.
+                    Priorizamos tecidos 100% algodão, percal de alta densidade e fios hipoalergênicos que não irritam a
+                    pele sensível do recém-nascido.
                 </p>
 
                 <div class="about-stats">
@@ -147,35 +159,32 @@
 
             <div class="about-card-wrapper">
                 <div class="about-card">
-                    <div class="badge-top-right">🛡️ Tecidos Puros & Anti-alérgicos</div>
-                    <img src="atelie-workspace.jpg" alt="Ateliê BordBella" class="about-img">
-                    <div class="about-floating-card">
-                        <div class="icon-pen">🪄</div>
-                        <div>
-                            <strong>Design Sob Medida</strong>
-                            <p>Aprovamos a prévia digital do bordado antes da confecção.</p>
-                        </div>
-                    </div>
+                 
+                    <img src="tecido.png" alt="Ateliê BordBella" class="about-img">
+
+
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
-    <!-- 3. SEÇÃO CARDS 3D FLIP -->
+
     <section class="services-section" id="servicos">
         <h2 class="section-title">Nossos Destaques <span>(Passe o mouse)</span></h2>
-        
+
         <div class="cards-3d-grid">
             <div class="card-container">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="https://picsum.photos/400/600?random=10" alt="Enxoval Luxo">
+                        <img src="vira1.png" alt="Enxoval Luxo">
                         <div class="card-front-title">Enxovais de Berço</div>
                     </div>
                     <div class="card-back">
                         <h3>Enxovais de Berço</h3>
                         <p>Kits completos em percal 400 fios com bordados personalizados e toque ultra macio.</p>
-                        <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Tenho%20interesse%20em%20Enxovais%20de%20Ber%C3%A7o." target="_blank" rel="noopener noreferrer" class="btn">Encomendar</a>
+                        <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Tenho%20interesse%20em%20Enxovais%20de%20Ber%C3%A7o."
+                            target="_blank" class="btn">Encomendar</a>
                     </div>
                 </div>
             </div>
@@ -183,13 +192,14 @@
             <div class="card-container">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="https://picsum.photos/400/600?random=11" alt="Bolsas Maternidade">
+                        <img src="vira2.png" alt="Bolsas Maternidade">
                         <div class="card-front-title">Bolsas Maternidade</div>
                     </div>
                     <div class="card-back">
                         <h3>Bolsas Maternidade</h3>
                         <p>Bolsas térmicas, impermeáveis e com acabamento refinado para o dia a dia.</p>
-                        <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Gostaria%20de%20ver%20modelos%20de%20Bolsas%20Maternidade." target="_blank" rel="noopener noreferrer" class="btn">Ver Modelos</a>
+                        <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Gostaria%20de%20ver%20modelos%20de%20Bolsas%20Maternidade."
+                            target="_blank" class="btn">Ver Modelos</a>
                     </div>
                 </div>
             </div>
@@ -197,35 +207,35 @@
             <div class="card-container">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="https://picsum.photos/400/600?random=12" alt="Toalhas Bordadas">
+                        <img src="vira3.png" alt="Toalhas Bordadas">
                         <div class="card-front-title">Toalhas e Mantas</div>
                     </div>
                     <div class="card-back">
                         <h3>Toalhas e Mantas</h3>
                         <p>Com capuz de fralda, bordados delicados e barrados em renda lese.</p>
-                        <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20Toalhas%20e%20Mantas." target="_blank" rel="noopener noreferrer" class="btn">Saiba Mais</a>
+                        <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20Toalhas%20e%20Mantas."
+                            target="_blank" class="btn">Saiba Mais</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- 4. CARROSSEL DE COLEÇÕES EM DESTAQUE -->
-    <section class="slider-section" id="colecoes">
+    <!-- SEÇÃO DE CARROSSEL DE COLEÇÕES -->
+    <section class="slider-section">
         <h2 class="section-title">Conheça Nossas <span>Coleções em Destaque</span></h2>
         <p class="section-sub">Passe o mouse sobre a imagem para pausar a apresentação</p>
 
         <div class="slider-wrapper">
             <div class="slider-track">
-                <img class="slide-img" src="https://picsum.photos/800/450?random=1" alt="Imagem 1">
-                <img class="slide-img" src="https://picsum.photos/800/450?random=2" alt="Imagem 2">
-                <img class="slide-img" src="https://picsum.photos/800/450?random=3" alt="Imagem 3">
-                <img class="slide-img" src="https://picsum.photos/800/450?random=4" alt="Imagem 4">
+                <img class="slide-img" src="Destaque2.png" alt="Imagem 1">
+                <img class="slide-img" src="Destaque3.png" alt="Imagem 2">
+                <img class="slide-img" src="Destaque4.png" alt="Imagem 3">
+                <img class="slide-img" src="Destaque.png" alt="Imagem 3">
+
             </div>
         </div>
     </section>
 
-    <!-- 5. GALERIA LIGHTBOX 100% CSS -->
     <section class="gallery-section" id="galeria">
         <h2 class="section-title">Nossa Galeria de Fotos</h2>
         <p class="section-sub">Clique em uma imagem para ampliá-la</p>
@@ -235,7 +245,7 @@
                 <img src="galeria1.png" alt="Foto Galeria 1">
             </a>
             <a href="#img2" class="gallery-item">
-                <img src="galeria2.png" alt="Foto Galeria 2">
+                <img src="nossa.png" alt="Foto Galeria 2">
             </a>
             <a href="#img3" class="gallery-item">
                 <img src="galeria3.png" alt="Foto Galeria 3">
@@ -257,7 +267,7 @@
             <a href="#galeria" class="lightbox-overlay"></a>
             <div class="lightbox-content">
                 <a href="#galeria" class="close-btn">&times;</a>
-                <img src="galeria2.png" alt="Foto 2 Ampliada">
+                <img src="nossa.png" alt="Foto 2 Ampliada">
             </div>
         </div>
 
@@ -278,53 +288,79 @@
         </div>
     </section>
 
-    <!-- 6. SEÇÃO DE AVALIAÇÕES / DEPOIMENTOS (5 FEEDBACKS) -->
-    <section class="testimonials-section" id="depoimentos">
+    <!-- SEÇÃO DE AVALIAÇÕES / DEPOIMENTOS (5 FEEDBACKS) -->
+    <section class="testimonials-section">
         <h2 class="section-title">O que dizem as <span>Nossas Mamães</span></h2>
         <p class="section-sub">Depoimentos reais de quem confia no BordBella Ateliê</p>
 
         <div class="testimonials-grid">
             <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
-                <p>"O enxoval do Gabriel ficou impecável! O tecido é superfofo, o acabamento sem fios soltos e o bordado veio exatamente como combinamos no WhatsApp."</p>
-                <strong>— Mariana S. (São Paulo - SP)</strong>
+                <p>"Como descrever o trabalho da Ana?
+                    Começando pelo atendimento incrível e esclarecedor!
+                    E as peças são simplesmente perfeitas, pessoalmente são idênticas ou ainda mais bonitas do que as
+                    fotos, os detalhes me encantaram!!"</p>
+                <strong>— Bruna R. </strong>
             </div>
 
             <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
-                <p>"A bolsa maternidade superou minhas expectativas. Espaçosa, fácil de limpar e muito elegante. Todo mundo na maternidade elogiou!"</p>
-                <strong>— Camila R. (Campinas - SP)</strong>
+                <p>"Eu quero agradecer de coração a Ana desde o momento que a chamei até o momento da entrega. Ana me
+                    respondeu assim que enviei mensagem e deu toda atenção que uma cliente deseja, mesmo estando fora do
+                    horário comercial. Ela conseguiu encaixar o meu pedido e ainda assim entregar antes do prazo.
+                    Trabalho lindíssimo que a gente vê que tem carinho. Recomendadissima!!!"</p>
+                <strong>— Priscila A.</strong>
             </div>
 
             <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
-                <p>"Comprei as toalhinhas de boca e o kit de fraldas bordadas. A delicadeza em cada detalhe é apaixonante. Chegou super rápido e cheiroso!"</p>
-                <strong>— Beatriz M. (Belo Horizonte - MG)</strong>
+                <p>"Sem palavras para descrever o quanto é incrível o trabalho da Bord"Bella. Percebemos o capricho em
+                    cada peça, chega a emocionar tanto amor em cada bordado. Eu ameiii demais. Comprei pra dar de
+                    presente, e fiquei encantada. Super recomendo, muito amor e capricho, otimo atendimento e entregou
+                    antes do prazo. Parabéns pelo excelente trabalho 🥰"</p>
+                <strong>— Natália F. </strong>
             </div>
 
             <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
-                <p>"Atendimento nota 1000! Tiraram todas as minhas dúvidas antes de fechar e me enviaram a prévia do nome bordado. Recomendo de olhos fechados."</p>
-                <strong>— Juliana P. (Curitiba - PR)</strong>
+                <p>"É uma perfeição de trabalho, ela é muito caprichosa.
+                    Tenho kits de fraldas que ela fez já fazem 4 anos e estão em perfeito estado, lindas, ganhei e
+                    depois comprei mais❤️
+                    Comprei agora dois kits pra dar de presente e 2 chaveiros para minhas filhas, simplesmente tudo
+                    muito perfeito!
+                    Recomendo!
+                    A Ana é maravilhosa e caprichosa ❤️"</p>
+                <strong>— Aline A. </strong>
             </div>
 
             <div class="testimonial-card">
                 <div class="stars">★★★★★</div>
-                <p>"Peças de alta qualidade que duram mesmo após várias lavagens. Já é o segundo enxoval que faço com o BordBella Ateliê!"</p>
-                <strong>— Fernanda L. (Rio de Janeiro - RJ)</strong>
+                <p>"Encontrei o contato da Ana pelo Instagram, dei uma olhada nos modelos e fiz meu primeiro pedido das
+                    bolsas de maternidade pra minha bebê, fiquei encantada com tanto carinho e capricho que ela coloca
+                    nas peças, fora a simpatia no atendimento. As peças são de altíssima qualidade, super recomendo.
+                    Mesmo ela sendo de outra cidade, já garanti meu segundo pedido e mais uma vez ameei.
+                    Aa ainda ela manda um mimo pra deixar a gaveta do bebê cheirosa 😍"</p>
+                <strong>— Kelly G. </strong>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p>"Eu fiquei simplesmente encantada com a minha encomenda, ficou perfeita demais, chegou certinho e
+                    superou minhas expectativas.... Recomendo e inclusive já quero fazer mais coisinhas 🙂"</p>
+                <strong>— Harelana H. </strong>
             </div>
         </div>
     </section>
 
-    <!-- BANNER DE AVISO DE COOKIES -->
+
     <div id="banner-cookies" class="banner-cookies">
         <p>
-            Utilizamos cookies para personalizar sua experiência. Ao continuar navegando, você concorda com a nossa política.
+            Utilizamos cookies para personalizar sua experiência. Ao continuar navegando, você concorda com a nossa
+            política.
         </p>
         <button id="btn-aceitar-cookies" class="btn-cookies">Entendi e Aceito</button>
     </div>
 
-    <!-- SCRIPT DE COOKIES -->
+
     <script>
         const bannerCookies = document.getElementById('banner-cookies');
         const btnAceitar = document.getElementById('btn-aceitar-cookies');
@@ -340,6 +376,14 @@
             bannerCookies.classList.add('oculto');
         });
     </script>
+
+    <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida."
+        target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="Fale conosco no WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592z" />
+        </svg>
+    </a>
 
 </body>
 
