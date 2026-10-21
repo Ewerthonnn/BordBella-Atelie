@@ -45,7 +45,8 @@
             <a href="#perfil" class="btn-perfil" title="Minha Conta">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <path d="M
+                     21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
                     <circle cx="12" cy="7" r="4"></circle>
                 </svg>
             </a>
@@ -70,7 +71,7 @@
             </p>
 
             <div class="hero-buttons">
-                <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Quero%20fazer%20uma%20encomenda%20personalizada."
+                <a href="https://wa.me/5512992040625?text=Ol%C3%A1!%20Quero%20fazer%20uma%20encomenda%20personalizada."
                     target="_blank" class="btn-primary">💬 Encomendar no WhatsApp</a>
                 <a href="#catalogo" class="btn-secondary">📖 Ver Catálogo</a>
             </div>
@@ -199,7 +200,7 @@
                     <div class="card-back">
                         <h3>Enxovais de Berço</h3>
                         <p>Kits completos em percal 400 fios com bordados personalizados e toque ultra macio.</p>
-                        <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Tenho%20interesse%20em%20Enxovais%20de%20Ber%C3%A7o."
+                        <a href="https://wa.me/5512992040625?text=Ol%C3%A1!%20Tenho%20interesse%20em%20Enxovais%20de%20Ber%C3%A7o."
                             target="_blank" class="btn">Encomendar</a>
                     </div>
                 </div>
@@ -214,7 +215,7 @@
                     <div class="card-back">
                         <h3>Bolsas Maternidade</h3>
                         <p>Bolsas térmicas, impermeáveis e com acabamento refinado para o dia a dia.</p>
-                        <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Gostaria%20de%20ver%20modelos%20de%20Bolsas%20Maternidade."
+                        <a href="https://wa.me/5512992040625?text=Ol%C3%A1!%20Gostaria%20de%20ver%20modelos%20de%20Bolsas%20Maternidade."
                             target="_blank" class="btn">Ver Modelos</a>
                     </div>
                 </div>
@@ -229,7 +230,7 @@
                     <div class="card-back">
                         <h3>Toalhas e Mantas</h3>
                         <p>Com capuz de fralda, bordados delicados e barrados em renda lese.</p>
-                        <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20Toalhas%20e%20Mantas."
+                        <a href="https://wa.me/5512992040625?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20Toalhas%20e%20Mantas."
                             target="_blank" class="btn">Saiba Mais</a>
                     </div>
                 </div>
@@ -493,13 +494,25 @@
         });
     </script>
 
-    <a href="https://wa.me/5519999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida."
+    <a href="https://wa.me/5512992040625?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida."
         target="_blank" rel="noopener noreferrer" class="whatsapp-float" title="Fale conosco no WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
             <path
                 d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592z" />
         </svg>
     </a>
+
+
+
+    <!-- INVOCAR O CHATBOT A PARTIR DO NOVO ARQUIVO -->
+    <script src="chatbot.js"></script>
+    <script>
+      // Inicializa o chatbot apontando para a base de dados em JSON
+      initChatbot({
+        jsonUrl: 'minha-base-dados.json'
+      });
+    </script>
+</body>
 
 </body>
 
