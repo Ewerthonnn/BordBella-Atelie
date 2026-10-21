@@ -1155,14 +1155,14 @@ a.btn-fale-conosco:hover {
     box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2);
 }
 
-/* --- AJUSTES DE RESPONSIVIDADE MOBILE --- */
+
 @media (max-width: 768px) {
     .navbar {
         padding: 0 20px;
     }
 
     .nav-links {
-        display: none; /* Esconde menu extenso em telas muito pequenas */
+        display: none; 
     }
 
     .hero-container {
