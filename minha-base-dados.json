@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "🧵 Produtos & Enxovais",
+    "keywords": ["produto", "enxoval", "bolsa", "toalha", "manta", "fralda", "modelos", "catalogo"],
+    "resposta": "Oferecemos **Enxovais de Berço em Percal 400 fios**, **Bolsas Maternidade térmicas**, **Toalhas com capuz de fralda** e **Kits de Maternidade personalizados**."
+  },
+  {
+    "titulo": "⏱️ Prazo de Confecção",
+    "keywords": ["prazo", "demora", "tempo", "dias", "feito"],
+    "resposta": "Nosso prazo médio de confecção é de **7 a 10 dias úteis**. Como cada peça é produzida artesanalmente com o nome do seu bebê, cuidamos de cada detalhe!"
+  },
+  {
+    "titulo": "🚚 Frete e Entregas",
+    "keywords": ["frete", "entrega", "envio", "sedex", "pac", "correios", "brasil"],
+    "resposta": "Enviamos para **todo o Brasil** via SEDEX ou PAC com código de rastreamento seguro. Para clientes de **Campinas e região**, temos opção de retirada ou entrega rápida."
+  },
+  {
+    "titulo": "🎨 Personalização e Nome",
+    "keywords": ["nome", "bordado", "fonte", "cor", "previa", "personalizar", "estampa"],
+    "resposta": "Você escolhe o nome, o tema e as cores! Antes de bordar, **enviamos uma prévia digital no WhatsApp** para sua aprovação final."
+  },
+  {
+    "titulo": "💳 Formas de Pagamento",
+    "keywords": ["pagamento", "pix", "cartao", "parcelado", "desconto", "sinal"],
+    "resposta": "Aceitamos **Pix (com desconto especial)**, **Cartão de Crédito em até 6x** e Boleto. Para encomendar, solicitamos um sinal de 50% e o restante no envio."
+  },
+  {
+    "titulo": "🧸 Tecidos & Cuidados",
+    "keywords": ["tecido", "alergia", "algodao", "percal", "qualidade", "pele", "lavar"],
+    "resposta": "Utilizamos apenas **tecidos 100% algodão e percal hipoalergênico**. O verso do bordado conta com proteção suave que não irrita a pele delicada do bebê."
+  },
+  {
+    "titulo": "💬 Falar no WhatsApp",
+    "keywords": ["whatsapp", "contato", "atendente", "falar", "humano", "telefone"],
+    "resposta": "Quer tirar dúvidas ou fazer um orçamento rápido? [Clique aqui para falar com a gente no WhatsApp](https://wa.me/5512992040625)!"
+  }
+]
