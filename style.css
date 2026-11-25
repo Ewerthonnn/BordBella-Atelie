@@ -64,6 +64,7 @@ body {
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 25px;
 }
 
@@ -77,6 +78,21 @@ body {
 
 .nav-links a:hover {
     color: #83274e;
+}
+
+.nav-links a.link-catalogo {
+    background-color: #ffffff;
+    color: #83274e;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1.5px solid #e2b8c7;
+    box-shadow: 0 2px 8px rgba(131, 39, 78, 0.08);
+}
+
+.nav-links a.link-catalogo:hover {
+    background-color: #83274e;
+    color: #ffffff;
+    border-color: #83274e;
 }
 
 .nav-actions {
@@ -234,11 +250,17 @@ a.btn-fale-conosco:hover {
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
+    display: inline-block;
 }
 
 .btn-secondary:hover {
     background-color: #f8e8ee;
     transform: translateY(-2px);
+}
+
+.cta-catalogo-center {
+    text-align: center;
+    margin-top: 38px;
 }
 
 .features-grid {
@@ -899,6 +921,32 @@ a.btn-fale-conosco:hover {
     box-shadow: 0 0 0 4px rgba(131, 39, 78, 0.08);
 }
 
+.options-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.option-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: #4a2033;
+    background-color: #fffcfd;
+    border: 1.5px solid #f0d2dd;
+    padding: 8px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.option-item input {
+    accent-color: #83274e;
+    cursor: pointer;
+}
+
 .btn-submit-form {
     margin-top: 8px;
     padding: 15px 24px;
@@ -916,7 +964,6 @@ a.btn-fale-conosco:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 22px rgba(131, 39, 78, 0.35);
 }
-
 
 .form-note {
     margin-top: 6px;
