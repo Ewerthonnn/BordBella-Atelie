@@ -417,15 +417,16 @@
             </div>
 
             <form id="form-encomenda" class="modern-form">
-                <div class="form-row">
+             <div class="form-row">
                     <div class="form-group">
                         <label for="nome-cliente">Seu Nome</label>
-                        <input type="text" id="nome-cliente" placeholder="Ex: Ana Paula" minlength="3" required>
+                        <input type="text" id="nome-cliente" name="nome_cliente" placeholder="Ex: Ana Paula"
+                            minlength="3" maxlength="100" required>
                     </div>
                     <div class="form-group">
                         <label for="telefone-cliente">Seu WhatsApp (DDD + Número)</label>
-                        <input type="tel" id="telefone-cliente" placeholder="Ex: (12) 99204-0625"
-                            minlength="10" maxlength="15"
+                        <input type="tel" id="telefone-cliente" name="telefone_whatsapp"
+                            placeholder="Ex: (12) 99204-0625" minlength="10" maxlength="20"
                             pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$"
                             title="Digite um telefone válido com DDD. Ex: (12) 99204-0625" required>
                     </div>
@@ -433,12 +434,12 @@
 
                 <div class="form-group">
                     <label for="nome-bebe">Nome do Bebê (para bordar)</label>
-                    <input type="text" id="nome-bebe" placeholder="Ex: Theo / Helena">
+                    <input type="text" id="nome-bebe" name="nome_bebe" placeholder="Ex: Theo / Helena" maxlength="80">
                 </div>
 
                 <div class="form-group">
                     <label for="produto-desejado">Peça Desejada</label>
-                    <select id="produto-desejado" required>
+                    <select id="produto-desejado" name="id_produto" required>
                         <option value="" disabled selected>Escolha uma opção...</option>
                         <option value="Kit Enxoval de Berço">Kit Enxoval de Berço</option>
                         <option value="Bolsa Maternidade">Bolsa Maternidade</option>
@@ -450,7 +451,7 @@
 
                 <div class="form-group">
                     <label for="detalhes-pedido">Tema ou Cores Preferidas (opcional)</label>
-                    <textarea id="detalhes-pedido" rows="3"
+                    <textarea id="detalhes-pedido" name="detalhes_tema_cores" rows="3" maxlength="500"
                         placeholder="Ex: Tema ursinho baloeiro, tons de bege e verde sálvia..."></textarea>
                 </div>
 
