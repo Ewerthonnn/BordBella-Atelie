@@ -32,10 +32,10 @@
         <nav class="nav-links">
             <a href="#inicio">Início</a>
             <a href="#sobre">Sobre</a>
-            <a href="catalogo.html">Tabela & Catálogo</a>
             <a href="#servicos">Serviços</a>
             <a href="#galeria">Galeria</a>
             <a href="#encomenda">Encomendar</a>
+            <a href="catalogo.html" class="link-catalogo">📋 Tabela & Catálogo</a>
         </nav>
 
         <div class="nav-actions">
@@ -68,8 +68,8 @@
             </p>
 
             <div class="hero-buttons">
-                <a href="#encomenda" class="btn-primary">🎀 Fazer Encomenda Rápida</a>
-                <a href="#servicos" class="btn-secondary">📖 Ver Destaques</a>
+                <a href="catalogo.html" class="btn-primary">📋 Ver Catálogo Completo</a>
+                <a href="#encomenda" class="btn-secondary">🎀 Fazer Encomenda Rápida</a>
             </div>
 
             <div class="features-grid">
@@ -120,7 +120,7 @@
                         <small class="sub-label">Coleção Primeiro Abraço</small>
                         <p class="sub-text">Toque Macio Aprovado - Pele delicada de recém-nascidos</p>
                     </div>
-                    <span class="badge-exclusivo">Exclusivo</span>
+                    <a href="catalogo.html" class="badge-exclusivo" style="text-decoration: none;">Ver Tabela →</a>
                 </div>
             </div>
         </div>
@@ -189,7 +189,7 @@
                         <h3>Enxovais de Berço</h3>
                         <p>Kits completos em percal 400 fios com bordados personalizados e toque ultra macio.</p>
                         <a href="https://wa.me/5512992040625?text=Ol%C3%A1!%20Tenho%20interesse%20em%20Enxovais%20de%20Ber%C3%A7o."
-                            target="_blank" class="btn">Encomendar</a>
+                            target="_blank" rel="noopener noreferrer" class="btn">Encomendar</a>
                     </div>
                 </div>
             </div>
@@ -204,7 +204,7 @@
                         <h3>Bolsas Maternidade</h3>
                         <p>Bolsas térmicas, impermeáveis e com acabamento refinado para o dia a dia.</p>
                         <a href="https://wa.me/5512992040625?text=Ol%C3%A1!%20Gostaria%20de%20ver%20modelos%20de%20Bolsas%20Maternidade."
-                            target="_blank" class="btn">Ver Modelos</a>
+                            target="_blank" rel="noopener noreferrer" class="btn">Ver Modelos</a>
                     </div>
                 </div>
             </div>
@@ -219,10 +219,14 @@
                         <h3>Toalhas e Mantas</h3>
                         <p>Com capuz de fralda, bordados delicados e barrados em renda lese.</p>
                         <a href="https://wa.me/5512992040625?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20Toalhas%20e%20Mantas."
-                            target="_blank" class="btn">Saiba Mais</a>
+                            target="_blank" rel="noopener noreferrer" class="btn">Saiba Mais</a>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="cta-catalogo-center">
+            <a href="catalogo.html" class="btn-secondary">📋 Consultar Tabela Completa de Medidas, Prazos e Valores →</a>
         </div>
     </section>
 
@@ -257,6 +261,10 @@
             <a href="#img4" class="gallery-item">
                 <img src="galeria4.png" alt="Foto Galeria 4">
             </a>
+        </div>
+
+        <div class="cta-catalogo-center">
+            <a href="catalogo.html" class="btn-secondary">🔍 Ver Todas as Peças e Valores no Catálogo</a>
         </div>
 
         <div class="lightbox" id="img1">
@@ -416,8 +424,8 @@
                 <p>Preencha os detalhes abaixo e receba seu orçamento direto no WhatsApp</p>
             </div>
 
-            <form id="form-encomenda" class="modern-form">
-             <div class="form-row">
+            <form id="form-encomenda" class="modern-form" action="#encomenda" method="post" enctype="multipart/form-data">
+                <div class="form-row">
                     <div class="form-group">
                         <label for="nome-cliente">Seu Nome</label>
                         <input type="text" id="nome-cliente" name="nome_cliente" placeholder="Ex: Ana Paula"
@@ -447,6 +455,43 @@
                         <option value="Manta Personalizada">Manta Personalizada</option>
                         <option value="Outro / Kit Completo">Outro / Kit Completo</option>
                     </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Forma de Entrega</label>
+                    <div class="options-inline">
+                        <label class="option-item">
+                            <input type="radio" name="tipo_entrega" value="Envio Nacional (Correios)" checked>
+                            Envio Nacional (Correios)
+                        </label>
+                        <label class="option-item">
+                            <input type="radio" name="tipo_entrega" value="Retirada no Ateliê">
+                            Retirada no Ateliê
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Adicionais Especiais (opcional)</label>
+                    <div class="options-inline">
+                        <label class="option-item">
+                            <input type="checkbox" name="adicionais" value="Embalagem para Presente">
+                            Embalagem para Presente
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="adicionais" value="Cartão com Dedicatória">
+                            Cartão com Dedicatória
+                        </label>
+                        <label class="option-item">
+                            <input type="checkbox" name="adicionais" value="Prioridade na Entrega">
+                            Prioridade na Entrega
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="arquivo-referencia">Foto ou Ideia de Referência (opcional)</label>
+                    <input type="file" id="arquivo-referencia" name="arquivo_referencia" accept="image/*,.pdf">
                 </div>
 
                 <div class="form-group">
@@ -481,6 +526,7 @@
                 <ul>
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="catalogo.html">Tabela & Catálogo</a></li>
                     <li><a href="#servicos">Destaques</a></li>
                     <li><a href="#galeria">Galeria</a></li>
                     <li><a href="#encomenda">Encomendar</a></li>
@@ -525,7 +571,6 @@
         </svg>
     </a>
 
- 
     <script>
         // Cookies
         const bannerCookies = document.getElementById('banner-cookies');
@@ -539,13 +584,18 @@
         });
 
         // Formulário Inteligente de Encomenda -> WhatsApp
-       document.getElementById('form-encomenda').addEventListener('submit', function (e) {
+        document.getElementById('form-encomenda').addEventListener('submit', function (e) {
             e.preventDefault();
 
             const nomeCliente = document.getElementById('nome-cliente').value.trim();
             const telefoneCliente = document.getElementById('telefone-cliente').value.trim();
             const nomeBebe = document.getElementById('nome-bebe').value.trim() || 'Ainda não definido';
             const produto = document.getElementById('produto-desejado').value;
+            const entregaEl = document.querySelector('input[name="tipo_entrega"]:checked');
+            const entrega = entregaEl ? entregaEl.value : 'Envio Nacional';
+            const adicionaisMarcados = Array.from(document.querySelectorAll('input[name="adicionais"]:checked'))
+                .map(el => el.value);
+            const adicionaisTexto = adicionaisMarcados.length > 0 ? adicionaisMarcados.join(', ') : 'Nenhum';
             const detalhes = document.getElementById('detalhes-pedido').value.trim() || 'A combinar';
 
             const numeroWhatsApp = '5512992040625';
@@ -555,13 +605,14 @@
                 `*WhatsApp:* ${telefoneCliente}\n` +
                 `*Nome do Bebê:* ${nomeBebe}\n` +
                 `*Peça:* ${produto}\n` +
+                `*Entrega:* ${entrega}\n` +
+                `*Adicionais:* ${adicionaisTexto}\n` +
                 `*Tema/Cores:* ${detalhes}`;
 
             const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
             window.open(url, '_blank', 'noopener,noreferrer');
         });
     </script>
-
 
     <script src="chatbot.js"></script>
     <script>
